@@ -22,14 +22,14 @@ To integrate using Apple's Swift Package Manager, add the following as a depende
 .package(name: "BVPlayerCore", url: "https://github.com/BlendVision/bvplayer-ios-core", .exact("Version Number"))
 ```
 
-And then specify the `BVPlayer` as a dependency of the desired target. Here is an example of a `Package.swift` file:
+And then specify the `BVPlayerCore` as a dependency of the desired target. Here is an example of a `Package.swift` file:
 
 ```swift
 let package = Package(
   ...
   dependencies: [
     ...
-    .package(name: "BVPlayerCore", url: "https://github.com/BlendVision/bvplayer-ios-core", .exact("Version Number"))
+    .package(url: "https://github.com/BlendVision/bvplayer-ios-core", exact: "Version Number")
   ],
   targets: [
     .target(
