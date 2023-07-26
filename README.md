@@ -1,5 +1,12 @@
 # BVPlayerCore
 
+- [Installation](#installation)
+    - [Swift Package Manager](#using-swift-package-manager)
+    - [Add the Player SDK to the Project directly](#add-the-player-sdk-to-the-project-directly)
+- [Getting Started](#getting-started)
+    - [Configure the license key](#configure-the-license-key)
+- [Samples](#samples)
+
 The `BVPlayerCore` package is the standalone `Player` without additional dependencies to other modules such as `GPUImage_iOS`.
 
 ## Installation
