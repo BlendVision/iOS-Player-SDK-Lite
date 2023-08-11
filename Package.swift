@@ -23,7 +23,7 @@ let package = Package(
         .binaryTarget(
             name: "BVPlayerCore",
             url: "https://github.com/BlendVision/iOS-Player-SDK/releases/download/2.5.1/KKSPlayer-2.5.1.44-WOPSE.xcframework.zip",
-            checksum: "402baa0254cde1dfae1c1c95df800a97ac5f5827a318697bb5f3048956abba7b"
+            checksum: "a36c1fbc043dc7533b0a74a2ce2515a5bd864471777f1fe59381e4a9d085f865"
         ),
         .binaryTarget(
             name: "SwiftWebVTT",
