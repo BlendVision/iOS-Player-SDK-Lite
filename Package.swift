@@ -22,8 +22,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "BVPlayerCore",
-            url: "https://github.com/BlendVision/iOS-Player-SDK/releases/download/2.5.1/KKSPlayer-2.5.1.44-WOPSE.xcframework.zip",
-            checksum: "a36c1fbc043dc7533b0a74a2ce2515a5bd864471777f1fe59381e4a9d085f865"
+            url: "https://github.com/BlendVision/iOS-Player-SDK/releases/download/2.5.2/KKSPlayer-2.5.2.45-WOPSE.xcframework.zip",
+            checksum: "f60503344ab40ecdb179c903c4dc718951cf9b88ee7bcfba5bf55d4d428e1056"
         ),
         .binaryTarget(
             name: "SwiftWebVTT",
