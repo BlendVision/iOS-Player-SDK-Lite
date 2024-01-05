@@ -23,7 +23,7 @@ let package = Package(
         .binaryTarget(
             name: "BVPlayerCore",
             url: "https://github.com/BlendVision/iOS-Player-SDK/releases/download/2.8.0/BVPlayer-2.8.0_WOPSE.xcframework.zip",
-            checksum: "5a167b4dd90f99ab78d8cd636bc76cfc0bc67d47d8a0791c903d65fea69843af"
+            checksum: "f66d00467266644e039b7d6eaef9193f64b4058afe5a8f771d81d6a62391a8c1"
         )
     ]
 )
