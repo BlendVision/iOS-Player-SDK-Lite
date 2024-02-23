@@ -22,8 +22,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
             name: "BVPlayerCore",
-            url: "https://github.com/BlendVision/iOS-Player-SDK/releases/download/2.8.0/BVPlayer-2.8.0_WOPSE.xcframework.zip",
-            checksum: "f66d00467266644e039b7d6eaef9193f64b4058afe5a8f771d81d6a62391a8c1"
+            url: "https://github.com/BlendVision/bvplayer-ios-core/releases/download/3.0.0/BVPlayer-3.0.0.7953271_.WOPSE_Release.xcframework.zip",
+            checksum: "9fde22ea0514f53058f2fba38156bde6f1e282d9400694c5570b0ebe6fc7d87b"
         )
     ]
 )
