@@ -1,4 +1,4 @@
-# BVPlayerCore
+# BVPlayer Lite
 
 - [Installation](#installation)
     - [Swift Package Manager](#using-swift-package-manager)
@@ -7,10 +7,13 @@
     - [Configure the license key](#configure-the-license-key)
 - [Samples](#samples)
 
-The `BVPlayerCore` package is the standalone `Player` without additional dependencies to other modules such as `GPUImage_iOS`.
+The `BVPlayerLite` package is the standalone `Player` without additional dependencies to other modules such as `GPUImage_iOS`.
+
+## Dependency
+BVPlayer SDK has a dependency on the GoogleCast framework version 4.7.1.04.11. This dependency enables integration with Google Cast for casting media content to Chromecast devices.
 
 ## Installation
-To add the `BVPlayerCore` SDK as a dependency to your project, you have two options: Swift Package Manager or adding the SDK bundle directly.
+To add the `BVPlayerLite` SDK as a dependency to your project, you have two options: Swift Package Manager or adding the SDK bundle directly.
 
 ### Using [Swift Package Manager](https://swift.org/package-manager/)
 [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift frameworks. It integrates with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
@@ -19,42 +22,34 @@ To add the `BVPlayerCore` SDK as a dependency to your project, you have two opti
 To integrate using Xcode 13, open your Project file and specify it in `Project > Package Dependencies` using the following URL:
 
 ```
-https://github.com/BlendVision/bvplayer-ios-core
+https://github.com/BlendVision/iOS-Player-SDK-Lite.git
 ```
 
 #### Using `Package.swift`
 To integrate using Apple's Swift Package Manager, add the following as a dependency to your `Package.swift` and replace `Version Number` with the desired version of the SDK.
 
 ```swift
-.package(name: "BVPlayerCore", url: "https://github.com/BlendVision/bvplayer-ios-core", .exact("Version Number"))
+.package(name: "BVPlayerLite", url: "https://github.com/BlendVision/iOS-Player-SDK-Lite.git", .exact("Version Number"))
 ```
 
-And then specify the `BVPlayerCore` as a dependency of the desired target. Here is an example of a `Package.swift` file:
+And then specify the `BVPlayerLite` as a dependency of the desired target. Here is an example of a `Package.swift` file:
 
 ```swift
 let package = Package(
   ...
   dependencies: [
     ...
-    .package(url: "https://github.com/BlendVision/bvplayer-ios-core", exact: "Version Number")
+    .package(name: "BVPlayerLite", url: "https://github.com/BlendVision/iOS-Player-SDK-Lite.git", .exact("Version Number"))
   ],
   targets: [
-    .target(
-      name: "<NAME_OF_YOUR_PACKAGE>", 
-      dependencies: [
-        .product(name: "BVPlayerCore", package: "bvplayer-ios-core")
-      ]
-    )
+    .target(name: "<NAME_OF_YOUR_PACKAGE>", dependencies: ["BVPlayerLite"])
   ]
   ...
 )
 ```
 
-##### Limitation
-Executing `swift build` from the command line is currently not supported. Open the Package in Xcode if you are developing another Package depending on `BVPlayerCore`.
-
 ### Add the Player SDK to the Project directly
-When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BVPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS can be downloaded [here](https://github.com/BlendVision/bvplayer-ios-core/releases/download/3.0.0/BVPlayer-3.0.0.7953271_.WOPSE_Release.xcframework.zip).
+When using Xcode, go to the `General` page or your app target and add the SDK bundle (`BVPlayer.xcframework`) under `Linked Frameworks and Libraries`. The latest SDK for iOS can be downloaded [here](https://github.com/BlendVision/iOS-Player-SDK-Lite/releases/download/3.0.0/BVPlayer-3.0.0.7953271_.WOPSE_Release.xcframework.zip).
 
 ## Getting Started
 ### Configure the license key
