@@ -1,4 +1,5 @@
 # BVPlayer Lite
+The `BVPlayerLite` package is the standalone `Player` without additional dependencies to other modules such as `GPUImage_iOS`.
 
 - [Installation](#installation)
     - [Swift Package Manager](#using-swift-package-manager)
@@ -7,13 +8,11 @@
     - [Configure the license key](#configure-the-license-key)
 - [Samples](#samples)
 
-The `BVPlayerLite` package is the standalone `Player` without additional dependencies to other modules such as `GPUImage_iOS`.
-
-## Dependency
-BVPlayer Lite SDK has a dependency on the GoogleCast framework version 4.7.1.04.11. This dependency enables integration with Google Cast for casting media content to Chromecast devices.
-
 ## Installation
-To add the `BVPlayerLite` SDK as a dependency to your project, you have two options: Swift Package Manager or adding the SDK bundle directly.
+To add the `BVPlayer Lite SDK` as a dependency to your project, you have two options: Swift Package Manager or adding the SDK bundle directly.
+
+### Dependency
+BVPlayer Lite SDK has a dependency on the GoogleCast framework version 4.7.1.04.11. This dependency enables integration with Google Cast for casting media content to Chromecast devices.
 
 ### Using [Swift Package Manager](https://swift.org/package-manager/)
 [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift frameworks. It integrates with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
